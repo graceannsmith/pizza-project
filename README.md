@@ -25,11 +25,10 @@ Code:const myPizza = new PizzaMaker {size: 'Medium', toppings: Array(2), price:
 Expected Output: const myPizza = new PizzaMaker {size: 'Medium', toppings: Array(2), price: 10.5}
 
 
+Test:It should create a method for updating the price based on topping
+Code: const myNewPizza = new PizzaMaker("medium",["Olives","Sausage"]);
+Expected Output: PizzaMaker {size: 'medium', toppings: Array(2), price: 15.5}
 
-
-Test:
-Code:
-Expected Output:
 Test:
 Code:
 Expected Output:

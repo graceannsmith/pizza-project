@@ -2,20 +2,23 @@
 function PizzaMaker (size, toppings, price) {
     this.size = size;
     this.toppings = toppings;
-    this.price = this.addSizePrice();
+    this.price = this.addSizePrice() + this.addToppingPrice();
 }
 
 PizzaMaker.prototype.addSizePrice = function() {
     if(this.size ==="small"){
-        this.price = 10.5
+        return 10.5;
     }
     if (this.size === "medium"){
-        this.price = 12.5
+        return 12.5;
     }
     if (this.size ==="large"){
-        this.price = 15.5
+        return 15.5;
     }
-    return this.price;
+    return 0;
+}
+PizzaMaker.prototype.addToppingPrice = function () {
+   return this.toppings.length *1.50;
 }
 
 //UI
