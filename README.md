@@ -12,12 +12,14 @@ Code: const myPizza = new PizzaMaker('Medium')
 Expected Output: PizzaMaker{size: "medium"}
 
 Test:It should create an object with both property of size and a property of toppings that has an array value with several potential toppings
-Code:myPizza = new Pizza("Medium", ["basil", "sun dried tomatoes"] )
-Expected Output: pizza{size: "Medium", toppings: ["basil", "sun dried tomatoes"]}
+Code: const myPizza = new PizzaMaker("Medium", ["artichokes", "sun dried tomatoes"] )
+Expected Output: PizzaMaker {size: 'Medium', toppings: Array(2)}
 
-Test:
-Code:
-Expected Output:
+
+Test:it chould create an object that contains three properties: size, toppings and price
+Code:const myPizza = new PizzaMaker("Medium", ["artichokes", "sun dried tomatoes"], 10.5)
+Expected Output:PizzaMaker {size: 'Medium', toppings: Array(2), price: 10.5}
+
 Test:
 Code:
 Expected Output:
