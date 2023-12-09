@@ -16,13 +16,17 @@ Code: const myPizza = new PizzaMaker("Medium", ["artichokes", "sun dried tomatoe
 Expected Output: PizzaMaker {size: 'Medium', toppings: Array(2)}
 
 
-Test:it chould create an object that contains three properties: size, toppings and price
+Test:it should create an object that contains three properties: size, toppings and price
 Code:const myPizza = new PizzaMaker("Medium", ["artichokes", "sun dried tomatoes"], 10.5)
 Expected Output:PizzaMaker {size: 'Medium', toppings: Array(2), price: 10.5}
 
-Test:
-Code:
-Expected Output:
+Test: PizzaMaker object constructor should have prototype added to update price based on size
+Code:const myPizza = new PizzaMaker {size: 'Medium', toppings: Array(2), price: 10.5}
+Expected Output: const myPizza = new PizzaMaker {size: 'Medium', toppings: Array(2), price: 10.5}
+
+
+
+
 Test:
 Code:
 Expected Output:
