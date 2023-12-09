@@ -8,8 +8,8 @@ Keep it simple to start! You do not need to have a complex formula for determini
 Your business logic and user interface logic should be separated. In addition to that, do your best to follow the principle of separation of concerns for the functions that you create.
 
 Test: It should create an object that has one property of size
-Code: const myPizza = new Pizza(size)
-Expected Output: Pizza{size: "medium"}
+Code: const myPizza = new PizzaMaker('Medium')
+Expected Output: PizzaMaker{size: "medium"}
 
 Test:It should create an object with both property of size and a property of toppings that has an array value with several potential toppings
 Code:myPizza = new Pizza("Medium", ["basil", "sun dried tomatoes"] )
