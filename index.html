@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1>Build Your Own Pizza!</h1>
+    <div id="bigForm">
 <div id="sizes">
+    
     <p>Pick Your Size:</p>
     <input type="radio" id="smallPizza" name="pizza_sizes" value="smallPizza">
-    <label for="smallPizza">Small</label><br>
-    
+    <label for="smallPizza" name="pizza_sizes" value="smallPizza">Small</label><br>
+        
     <input type="radio" id="mediumPizza" name="pizza_sizes" value="mediumPizza">
     <label for="mediumPizza">Medium</label><br>
     
@@ -44,7 +46,9 @@
     <input type="checkbox" id="topping3" name="topping3" value="Tomatoes">
     <label for="topping3">Sun Dried Tomatoes</label><br>
 
+    <input type="submit" value="Make Your Pizza">
 </div>
-    
+</div>
+    <p id="grandTotal"></p>
 </body>
 </html>
