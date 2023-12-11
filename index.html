@@ -4,51 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Pizza Time!</title>
 </head>
-<body>
+<body id="body">
     <h1>Build Your Own Pizza!</h1>
-    <div id="bigForm">
-<div id="sizes">
-    
-    <p>Pick Your Size:</p>
-    <input type="radio" id="smallPizza" name="pizza_sizes" value="smallPizza">
-    <label for="smallPizza" name="pizza_sizes" value="smallPizza">Small</label><br>
-        
-    <input type="radio" id="mediumPizza" name="pizza_sizes" value="mediumPizza">
-    <label for="mediumPizza">Medium</label><br>
-    
-    <input type="radio" id="largePizza" name="pizza_sizes" value="largePizza">
-    <label for="largePizza">Large</label>
+    <form id="pizzaForm">
+<div id="sizes"> 
+    <h3>Pick Your Size:</h3>
+    <input type="radio" id="smallPizza" name="pizza_sizes" value="smallPizza" checked>
+        <label for="smallPizza">Small</label><br>     
+        <input type="radio" id="mediumPizza" name="pizza_sizes" value="mediumPizza">
+        <label for="mediumPizza">Medium</label><br>
+        <input type="radio" id="largePizza" name="pizza_sizes" value="largePizza">
+        <label for="largePizza">Large</label>
 </div>
-
-
 <div id ="toppings">
-    <p>Pick Your Toppings:</p>
-    <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
-    <label for="topping1">Pepperoni</label><br>
-    
-    <input type="checkbox" id="topping2" name="topping2" value="Artichoke">
-    <label for="topping2">Artichoke</label><br>
-    
-    <input type="checkbox" id="topping3" name="topping3" value="Anchovy">
-    <label for="topping3">Anchovy</label><br>
-
-    <input type="checkbox" id="topping3" name="topping3" value="Pepperoncini">
-    <label for="topping3">Pepperoncini</label><br>
-
-    <input type="checkbox" id="topping3" name="topping3" value="Sausage">
-    <label for="topping3">Sausage</label><br>
-
-    <input type="checkbox" id="topping3" name="topping3" value="Olive">
-    <label for="topping3">Olive</label><br>
-
-    <input type="checkbox" id="topping3" name="topping3" value="Tomatoes">
-    <label for="topping3">Sun Dried Tomatoes</label><br>
-
-    <input type="submit" value="Make Your Pizza">
+    <h3>Pick Your Toppings:</h3>
+        <input type="checkbox" id="topping1" name="toppings" value="Pepperoni" checked>
+        <label for="topping1">Pepperoni</label><br>
+        <input type="checkbox" id="topping2" name="toppings" value="Artichoke">
+        <label for="topping2">Artichoke</label><br>
+        <input type="checkbox" id="topping3" name="toppings" value="Anchovy">
+        <label for="topping3">Anchovy</label><br>
+        <input type="checkbox" id="topping4" name="toppings" value="Pepperoncini">
+        <label for="topping4">Pepperoncini</label><br>
+        <input type="checkbox" id="topping5" name="toppings" value="Sausage">
+        <label for="topping5">Sausage</label><br>
+        <input type="checkbox" id="topping6" name="toppings" value="Olive">
+        <label for="topping6">Olive</label><br>
+        <input type="checkbox" id="topping7" name="toppings" value="Tomatoes">
+        <label for="topping7">Sun Dried Tomatoes</label><br>
+        <input type="submit" value="submit">
 </div>
-</div>
-    <p id="grandTotal"></p>
+</form>
+    <h2>Your Grand Total is:</h2><p id="grandTotal"></p>
 </body>
 </html>
+
